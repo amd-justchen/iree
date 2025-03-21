@@ -495,6 +495,9 @@ void addGPUTileAndFusePassPipeline(OpPassManager &funcPassManager,
   funcPassManager.addPass(createGPUVerifyDistributionPass());
   funcPassManager.addPass(createGPUDistributeForallPass());
 
+  // Convert linalg.copy to direct loads
+  funcPassManager.addPass(createGPULowerToGlobalLoadsPass());
+
   // Vectorize copies that came out of bufferization.
   funcPassManager.addPass(createVectorizeMemrefCopyPass());
 
