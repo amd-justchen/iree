@@ -21,6 +21,7 @@ iree_lit_test_suite(
     "bubble_up_ordinal_ops.mlir"
     "bufferize_copy_only_dispatches.mlir"
     "canonicalize_interface_load_store.mlir"
+    "combine_layout_transformation.mlir"
     "convert_accgemm_to_gemm.mlir"
     "convert_bf16_arith_to_f32.mlir"
     "convert_bf16_to_uint16_buffers.mlir"

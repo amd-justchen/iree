@@ -85,6 +85,7 @@ iree_cc_library(
     "BufferizationAnalysis.cpp"
     "BufferizeCopyOnlyDispatchesPass.cpp"
     "CleanupBufferAllocViewPass.cpp"
+    "CombineLayoutTransformation.cpp"
     "ConcretizePadResultShape.cpp"
     "ConfigTrackingCanonicalizer.cpp"
     "ConvertAccGEMMToGEMMPass.cpp"
